@@ -1,0 +1,31 @@
+<% layout('layout') %>
+<form action="/process_form" method="POST">
+    <legend>Contact Form</legend>
+    <div>
+      <label for="">Name: </label>
+      <input class="form-control" type="text" placeholder="name" name="name">
+      <% if(errors.length > 0 && errors.find(error => error.param === 'name')) { %>
+             <p class="text-danger"> <%= errors.find(error => error.param === 'name').msg %></p>
+      <% } %>
+    </div>
+      <div>
+      <label for="">Email: </label>
+      <input class="form-control" type="email" placeholder="email" name="email">
+        <% if(errors.length > 0 && errors.find(error => error.param === 'email')) { %>
+             <p class="text-danger"> <%= errors.find(error => error.param === 'email').msg %></p>
+      <% } %>
+    </div>
+     <div>
+      <label for="">Name: </label>
+      <input class="form-control" type="text" placeholder="name" name="subject">
+        <% if(errors.length > 0 && errors.find(error => error.param === 'name')) { %>
+             <p class="text-danger"> <%= errors.find(error => error.param === 'name').msg %></p>
+      <% } %>
+    </div>
+    <textarea class="form-control" name="message" id="" cols="30" rows="10"></textarea>
+      <% if(errors.length > 0 && errors.find(error => error.param === 'name')) { %>
+             <p class="text-danger"> <%= errors.find(error => error.param === 'name').msg %></p>
+      <% } %>
+    <button type="submit" class="btn btn-success">Send!</button>
+
+</form>
