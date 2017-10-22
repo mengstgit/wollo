@@ -35,6 +35,7 @@ app.use(flash());
 
 app.use(express.static(__dirname + '/public'));
 app.use(contactRoute);
+
 app.listen(config.port, () => {
 	console.log(`server is listening on port ${config.port}`);
 });
