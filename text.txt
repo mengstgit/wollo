@@ -1,0 +1,3 @@
+// app.get('/students/:name/:age', (req, res) => {
+// 	res.send(`this is the student name ${req.params.name} and the age is ${req.params.age}`);
+// });

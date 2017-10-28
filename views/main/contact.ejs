@@ -16,9 +16,9 @@
       <% } %>
     </div>
      <div>
-      <label for="">Name: </label>
-      <input class="form-control" type="text" placeholder="name" name="subject">
-        <% if(errors.length > 0 && errors.find(error => error.param === 'name')) { %>
+      <label for="">subject: </label>
+      <input class="form-control" type="text" placeholder="subject" name="subject">
+        <% if(errors.length > 0 && errors.find(error => error.param === 'subject')) { %>
              <p class="text-danger"> <%= errors.find(error => error.param === 'name').msg %></p>
       <% } %>
     </div>

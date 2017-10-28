@@ -1,7 +1,6 @@
 {
   "name": "contact",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,5 +23,7 @@
     "mongoose": "^4.12.3",
     "morgan": "^1.9.0",
     "nodemon": "^1.12.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
